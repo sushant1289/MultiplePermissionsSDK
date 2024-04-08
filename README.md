@@ -42,3 +42,6 @@ dependencies {
                     )
   ```
 And you are all set to use this SDK
+
+![image](https://github.com/sushant1289/MultiplePermissionsSDK/assets/165392691/c2033ee6-1dc7-4e0d-9958-dc0650cc1f00)
+
