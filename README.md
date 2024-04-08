@@ -1,4 +1,4 @@
-### This is a multiple permission request SDK ###
+### This is a multiple permission request SDK using Jetpack compose ###
 - Add the JitPack repository to your build file Add it in your root build.gradle at the end of repositories:
 ```
 dependencyResolutionManagement {
@@ -18,3 +18,27 @@ dependencies {
 ```
 
 - The Latest Release is 1.1
+
+- To use it's functionality:
+   - You have to include the permissions which you want to ask and enable in the app.
+   - Then go to the main activity and create an array of Permissons like this:
+     
+     ```
+     private val permissionsToRequest = arrayOf(
+        Manifest.permission.CAMERA,
+        Manifest.permission.RECORD_AUDIO,
+        Manifest.permission.ACCESS_COARSE_LOCATION,
+        Manifest.permission.ACCESS_FINE_LOCATION,
+        Manifest.permission.CALL_PHONE
+    )
+
+     ```
+- Then inside the setContent block add This below line:
+
+  ```
+  PermissionProvider(
+                        activity = this,
+                        permissionsToRequest = permissionsToRequest
+                    )
+  ```
+And you are all set to use this SDK
