@@ -31,8 +31,7 @@ dependencies {
         Manifest.permission.ACCESS_FINE_LOCATION,
         Manifest.permission.CALL_PHONE
     )
-
-     ```
+  ```
 - Then inside the setContent block add This below line:
 
   ```
